@@ -10,11 +10,11 @@ To get started visit our [Unity Engine Integration](https://www.mopub.com/resour
 
 To file an issue with our team please email [support@mopub.com](mailto:support@mopub.com).
 
-## New in this Version
-Please view the [changelog](https://github.com/mopub/mopub-unity-sdk/blob/master/CHANGELOG.md) for a complete list of additions, fixes, and enhancements in the latest release.
-
+## New in this Version (4.15.0 - June 29, 2017)
 - The MoPub Unity Plugin is now compatible with version 4.15 of the MoPub SDK.
 - The MoPub Unity Plugin is now available on GitHub.
+
+Please view the [changelog](https://github.com/mopub/mopub-unity-sdk/blob/master/CHANGELOG.md) for a complete list of additions, fixes, and enhancements in the latest release.
 
 ## License
 
