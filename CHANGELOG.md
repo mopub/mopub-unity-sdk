@@ -8,6 +8,9 @@
 ## Version 4.13.0
 - The MoPub Unity Plugin is now compatible with version 4.13.0 of the MoPub SDK.
 
+## Version 4.12.0
+- The MoPub Unity Plugin is now compatible with version 4.12.0 of the MoPub SDK.
+
 ## Version 4.11.0
 - Minor bug fixes
 
