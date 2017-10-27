@@ -2,9 +2,9 @@
 using System;
 using System.Collections.Generic;
 
-using MoPubReward = MoPubManager.MoPubReward;
-
 #if UNITY_ANDROID
+
+using MoPubReward = MoPubManager.MoPubReward;
 
 public class MoPubAndroidRewardedVideo
 {
