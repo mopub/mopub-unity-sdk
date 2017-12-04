@@ -17,6 +17,7 @@
 			"EventKit.framework",
 			"EventKitUI.framework",
 			"CoreTelephony.framework",
+			"SafariServices.framework",
 			// AdMob
 			"MessageUI.framework",
 			// Millennial
