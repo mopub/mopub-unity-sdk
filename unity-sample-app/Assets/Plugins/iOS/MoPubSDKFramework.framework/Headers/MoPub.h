@@ -35,6 +35,12 @@
 #import "MPRewardedVideoError.h"
 #import "MPViewabilityAdapter.h"
 #import "MPViewabilityOption.h"
+#import "MPError.h"
+#import "MPAdConfiguration.h"
+#import "MPAdImpressionTimer.h"
+#import "MPRealTimeTimer.h"
+#import "MPAdDestinationDisplayAgent.h"
+#import "MPCoreInstanceProvider.h"
 
 #if MP_HAS_NATIVE_PACKAGE
 #import "MPNativeAd.h"
@@ -60,6 +66,11 @@
 #import "MOPUBNativeVideoAdRenderer.h"
 #import "MPNativeAdRenderingImageLoader.h"
 #import "MPStreamAdPlacer.h"
+#import "MPNativeAdRendererImageHandler.h"
+#import "MPNativeCache.h"
+#import "MPNativeView.h"
+#import "MPNativeAdUtils.h"
+#import "MPNativeAdRendererImageHandler.h"
 #endif
 
 // Import these frameworks for module support.
