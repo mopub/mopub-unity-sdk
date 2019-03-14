@@ -29,7 +29,7 @@ namespace MoPubInternal.Editor.Postbuild
 
         private static void CheckiOSVersion()
         {
-            var iOSTargetVersion = double.Parse(PlayerSettings.iOS.targetOSVersionString);
+            var iOSTargetVersion = double.Parse(PlayerSettings.iOS.targetOSVersionString, System.Globalization.CultureInfo.InvariantCulture);
             if (iOSTargetVersion < 7) {
                 Debug.LogWarning("MoPub requires iOS 7+. Please change the Target iOS Version in Player Settings to " +
                                  "iOS 7 or higher.");
