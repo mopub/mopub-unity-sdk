@@ -580,7 +580,7 @@ public class MoPubUnityPlugin {
                     if (fieldNode.isValueNode()) {
                         options.put(key, ((JrsValue)fieldNode).asText());
                     } else {
-                        options.put(key, node.toString());
+                        options.put(key, fieldNode.toString());
                     }
                 }
                 allOptions.put(adapterConfigClass, options);
