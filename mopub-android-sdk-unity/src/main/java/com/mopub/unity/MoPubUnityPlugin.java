@@ -575,7 +575,13 @@ public class MoPubUnityPlugin {
                 final Map<String, String> options = new HashMap<>();
                 for (Iterator<String> keys2 = optionsData.fieldNames(); keys2.hasNext(); ) {
                     String key = keys2.next();
-                    options.put(key, optionsData.get(key).toString());
+                    
+                    TreeNode fieldNode = optionsData.get(key);
+                    if (fieldNode.isValueNode()) {
+                        options.put(key, ((JrsValue)fieldNode).asText());
+                    } else {
+                        options.put(key, node.toString());
+                    }
                 }
                 allOptions.put(adapterConfigClass, options);
             } else {
