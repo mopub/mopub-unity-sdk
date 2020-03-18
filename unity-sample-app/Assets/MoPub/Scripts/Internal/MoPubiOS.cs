@@ -173,7 +173,7 @@ internal class MoPubiOS : MoPubPlatformApi
     internal override string CurrentConsentPrivacyPolicyUrl
     {
         get {
-            return _moPubCurrentConsentPrivacyPolicyUrl(MoPub.ConsentLanguageCode);;
+            return _moPubCurrentConsentPrivacyPolicyUrl(MoPub.ConsentLanguageCode);
         }
         set { }
     }
@@ -182,7 +182,7 @@ internal class MoPubiOS : MoPubPlatformApi
     internal override string CurrentVendorListUrl
     {
         get {
-            return _moPubCurrentConsentVendorListUrl(MoPub.ConsentLanguageCode);;
+            return _moPubCurrentConsentVendorListUrl(MoPub.ConsentLanguageCode);
         }
         set { }
     }
