@@ -245,6 +245,18 @@ public class MoPubSDKManager : EditorWindow
         var configs = from t in Assembly.GetExecutingAssembly().GetTypes()
                       where t.IsSubclassOf(baseType) && !t.IsAbstract
                       select Activator.CreateInstance(t) as PackageConfig;
+        
+        // Fix bug that can not find any sub class of PackageConfig in executing assembly.
+        if (!configs.Any())
+        {
+            var assemblies = CompilationPipeline.GetAssemblies(AssembliesType.Editor);
+            configs = assemblies.Select(assembly => DotNetAssembely.LoadFile(assembly.outputPath))
+                .Aggregate(configs, (current, dotNetAssembly) => 
+                    current.Concat(from t in dotNetAssembly.GetTypes() 
+                        where t.IsSubclassOf(baseType) && !t.IsAbstract 
+                        select Activator.CreateInstance(t) as PackageConfig));
+        }
+                      
         foreach (var config in configs) {
             SdkInfo info;
             sdkInfo.TryGetValue(config.Name, out info);
